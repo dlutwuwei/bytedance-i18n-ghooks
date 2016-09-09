@@ -1,5 +1,5 @@
 {
-  "extends": "kentcdodds",
+  "extends": "eslint:recommended",
   "rules": {
     "complexity": [2, 2],
     "max-statements": [2, 5]

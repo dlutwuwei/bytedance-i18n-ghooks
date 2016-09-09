@@ -18,7 +18,7 @@ Simple git hooks
 ## Installation
 
 ```
-npm install ghooks --save-dev
+npm install bytedance-i18n-ghooks --save-dev
 ```
 
 _It is not advised to install `ghooks` as a production dependency, as it will install git hooks in your production environment as well. Please install it under the `devDependencies` section of your `package.json`._

@@ -12,8 +12,8 @@ if (checkForGHooks(ghooks)) {
 
 function getGhooksEntryPoint() {
   try {
-    require('ghooks')
-    return 'ghooks'
+    require('bytedance-i18n-ghooks')
+    return 'bytedance-i18n-ghooks'
   } catch (e) {
     return getGhooksAbsoluteEntryPoint()
   }
@@ -22,9 +22,9 @@ function getGhooksEntryPoint() {
 function getGhooksAbsoluteEntryPoint() {
   const worktree = getWorkTree()
   if (worktree) {
-    return path.resolve(__dirname, '../', worktree, 'node_modules', 'ghooks')
+    return path.resolve(__dirname, '../', worktree, 'node_modules', 'bytedance-i18n-ghooks')
   }
-  return path.resolve(nodeModulesPath, 'ghooks')
+  return path.resolve(nodeModulesPath, 'bytedance-i18n-ghooks')
 }
 
 function checkForGHooks(ghooksPath) {
