@@ -1,17 +1,17 @@
 # ghooks
 
 [![version](https://img.shields.io/npm/v/ghooks.svg?style=flat-square)](http://npm.im/ghooks)
-[![travis build](https://img.shields.io/travis/gtramontina/ghooks.svg?style=flat-square)](https://travis-ci.org/gtramontina/ghooks)
-[![AppVeyor](https://img.shields.io/appveyor/ci/gtramontina/ghooks.svg?style=flat-square)](https://ci.appveyor.com/project/gtramontina/ghooks)
-[![codecov coverage](https://img.shields.io/codecov/c/github/gtramontina/ghooks.svg?style=flat-square)](https://codecov.io/github/gtramontina/ghooks)
-[![Dependencies status](https://img.shields.io/david/gtramontina/ghooks.svg?style=flat-square)](https://david-dm.org/gtramontina/ghooks#info=dependencies)
-[![Dev Dependencies status](https://img.shields.io/david/dev/gtramontina/ghooks.svg?style=flat-square)](https://david-dm.org/gtramontina/ghooks#info=devDependencies)
+[![travis build](https://img.shields.io/travis/dlutwuwei/ghooks.svg?style=flat-square)](https://travis-ci.org/dlutwuwei/ghooks)
+[![AppVeyor](https://img.shields.io/appveyor/ci/dlutwuwei/ghooks.svg?style=flat-square)](https://ci.appveyor.com/project/dlutwuwei/ghooks)
+[![codecov coverage](https://img.shields.io/codecov/c/github/dlutwuwei/ghooks.svg?style=flat-square)](https://codecov.io/github/dlutwuwei/ghooks)
+[![Dependencies status](https://img.shields.io/david/dlutwuwei/ghooks.svg?style=flat-square)](https://david-dm.org/dlutwuwei/ghooks#info=dependencies)
+[![Dev Dependencies status](https://img.shields.io/david/dev/dlutwuwei/ghooks.svg?style=flat-square)](https://david-dm.org/dlutwuwei/ghooks#info=devDependencies)
 
 [![MIT License](https://img.shields.io/npm/l/ghooks.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![downloads](https://img.shields.io/npm/dm/ghooks.svg?style=flat-square)](http://npm-stat.com/charts.html?package=ghooks&from=2014-04-01)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-[![gitter chat](https://img.shields.io/gitter/room/gtramontina/ghooks.svg?style=flat-square)](https://gitter.im/gtramontina/ghooks)
+[![gitter chat](https://img.shields.io/gitter/room/dlutwuwei/ghooks.svg?style=flat-square)](https://gitter.im/dlutwuwei/ghooks)
 
 Simple git hooks
 
@@ -78,14 +78,14 @@ One of the last things you want is to raise the barrier to contributing to your 
 
 ## Common Issues
 
-* [Usage with git GUI clients](https://github.com/gtramontina/ghooks/issues/18) – Thanks to [@JamieMason](https://github.com/JamieMason)
+* [Usage with git GUI clients](https://github.com/dlutwuwei/ghooks/issues/18) – Thanks to [@JamieMason](https://github.com/JamieMason)
 
 ## Credits
 This module is heavily inspired by [__@nlf__](https://github.com/nlf)'s [precommit-hook](https://www.npmjs.org/package/precommit-hook)
 
 ## Contributors
 
-Huge thanks to everyone listed [here](https://github.com/gtramontina/ghooks/graphs/contributors)!
+Huge thanks to everyone listed [here](https://github.com/dlutwuwei/ghooks/graphs/contributors)!
 
 ## License
 
