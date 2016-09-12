@@ -6,9 +6,8 @@ describe('hook.template.raw', function describeHookTemplateRaw() {
 
     beforeEach(() => {
       this.ghooks = sinon.stub()
-      proxyquire('../lib/hook.template.raw', {ghooks: this.ghooks})
+      proxyquire('../lib/hook.template.raw', {'bytedance-i18n-ghooks': this.ghooks})
     })
-
     it('delegates the hook execution to ghooks', () => {
       const filename = path.resolve(process.cwd(), 'lib', 'hook.template.raw')
       expect(this.ghooks).to.have.been.calledWith('{{node_modules_path}}', filename)
@@ -28,7 +27,7 @@ describe('hook.template.raw', function describeHookTemplateRaw() {
   describe('when ghooks is installed, but the node working dir is below the project dir', () => {
 
     beforeEach(() => {
-      const ghooksEntryPoint = path.resolve(__dirname, '..', '{{node_modules_path}}', 'ghooks')
+      const ghooksEntryPoint = path.resolve(__dirname, '..', '{{node_modules_path}}', 'bytedance-i18n-ghooks')
       this.ghooks = sinon.stub()
       proxyquire('../lib/hook.template.raw', {ghooks: null, [ghooksEntryPoint]: this.ghooks})
     })
@@ -44,7 +43,7 @@ describe('hook.template.raw', function describeHookTemplateRaw() {
 
     beforeEach(() => {
       const worktree = '../../a/path/somewhere/else'
-      const ghooksResolved = path.resolve(process.cwd(), worktree, 'node_modules', 'ghooks')
+      const ghooksResolved = path.resolve(process.cwd(), worktree, 'node_modules', 'bytedance-i18n-ghooks')
       const stub = {
         ghooks: null,
         fs: {

@@ -8,7 +8,7 @@ const ghooks = getGhooksEntryPoint()
 
 if (checkForGHooks(ghooks)) {
   require(ghooks)(nodeModulesPath, __filename)
-  runShell(__filename + ".bkp")
+  runShell(__filename + '.bkp')
 
 }
 
@@ -69,19 +69,33 @@ function warnAboutGHooks() {
   )
 }
 
-function runShell(cmd, args, cb_stdout, cb_end) {
+function runShell(cmd, args, cbStdout, cbEnd) {
   let fileStat = null
   try {
     fileStat = fs.statSync(cmd)
-  } catch(e) {
+  } catch (e) {
     return 0
   }
   if (fileStat && fileStat.isFile()) {
-    let spawn = require('child_process').spawn,
-      child = spawn(cmd, args),
-      me = {}
-    me.exit = 0  // Send a cb to set 1 when cmd exits
-    if(cb_stdout) child.stdout.on('data', function (data) { cb_stdout(me, data) })
-    if(cb_end) child.stdout.on('end', function () { cb_end(me) })
+    doShell(fileStat, cmd, args, cbStdout, cbEnd)
+  }
+  return 0
+}
+function doShell(fileStat, cmd, args, cbStdout, cbEnd) {
+  const spawn = require('child_process').spawn
+  const child = spawn(cmd, args)
+  const me = {
+    exit: 0,
+  }
+  if (cbStdout) {
+    child.stdout.on('data', function callback(data) {
+      cbStdout(me, data)
+    })
+  }
+  if (cbEnd) {
+    child.stdout.on('end', function callback() {
+      cbEnd(me)
+    })
   }
 }
+

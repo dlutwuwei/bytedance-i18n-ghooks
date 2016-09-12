@@ -2,16 +2,8 @@
   "env": {
     "node": true
   },
-  "parserOptions": {
-      "ecmaVersion": 6,
-      "sourceType": "module",
-      "ecmaFeatures": {
-          "jsx": true
-      }
-  },
+  "extends": "kentcdodds",
   "rules": {
-    "complexity": [2, 2],
-    "semi": [2, "never"],
-    "max-statements": [2, 5]
+    "no-console": 0
   }
 }
